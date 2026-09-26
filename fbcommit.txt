@@ -1,0 +1,8 @@
+feat: switch Moon Place login from KeyAuth to Firebase Auth
+
+- Add FirebaseAuthenticationClient using the Identity Toolkit REST API
+  (no SDK dependency, CI build stays dependency-free)
+- Sessions: ID/refresh tokens in Keychain, profile in UserDefaults,
+  automatic restore on launch
+- Remove KeyAuthClient.swift and KEYAUTH_SETUP.md
+- Keep Supabase as automatic fallback when Firebase is not configured
